@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+}
+
+/* OfferBar */
+
+.offerBar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* NavBar */
+/* 
+.navbars a {
+    text-decoration: none;
+    color: black;
+}
+
+.navBar {
+    background-color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    z-index: 3;
+
+}
+
+.navbars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+
+}
+
+.navbars a:hover {
+   text-decoration: underline;
+    transition: 2s;
+    transition-timing-function:ease-in ;
+    color: black;
+}
+
+.navBar h1 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.navBar h4 {
+    font-weight: 700;
+    font-size: 25px;
+} */
+
+
+/* Slider */
+
+.container {
+    width: 100vw; 
+    margin: 0; 
+    padding: 0;  
+}
+
+.slider {
+    display: flex;
+    width: 100vw;  
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.slider-image-container {
+    display: flex;
+    transition: 2s;
+    width: 300vw; 
+}
+
+.slider-image {
+    width: 100vw;  
+    height: 60vh;
+}
+
+.slider-left-button {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+}
+
+.slider-left-button i {
+    font-size: 10vw;
+}
+
+.slider-right-button {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+
+.slider-right-button i {
+    font-size: 10vw;
+}
+
+.slider-content {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    top: 20%;
+}
+
+.slider-content h1 {
+    font-size: 2vw;
+}
+
+.slider-content button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #1D232C;
+}
+
+.btne {
+    background-color: white;
+    color: black;
+}
+
+
+/* BrandsItem */
+
+.brands {
+    display: flex;
+    width: 100vw;  
+    margin-top: 2vw;
+    justify-content: space-between;  
+    padding: 0; 
+    box-sizing: border-box;  
+}
+
+.brandsIcon {
+    width: 4vw;
+    align-items: center;
+}
+
+.brandsItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3vw;
+    width: calc(100% / 7);
+    flex-shrink: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+
+}
+
+/* Servives */
+/* Ensure the outer container takes the full width of the screen */
+/* Ensure the outer container takes the full width of the screen */
+/* Ensure the outer container takes the full width of the screen */
+/* Ensure the outer container takes the full width of the screen */
+/* Ensure the outer container takes the full width of the screen */
+/* Ensure the outer container takes the full width of the screen */
+/* Ensure the outer container takes the full width of the screen */
+
+/* html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling } */
+ 
+
+.servive {
+    width: 100vw; /* Full viewport width */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.servivesContainer1 {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vw;
+    width: 100vw; /* Full viewport width */
+    box-sizing: border-box;
+}
+
+.servivesContainer2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensures 4 equal columns */
+    gap: 10px;
+    width: 100vw; /* Full viewport width */
+    box-sizing: border-box;
+}
+
+
+
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <!-- Style Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Tailwind CDN Link -->
+    <link href="
+       https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+       " rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Offer bar -->
+
+    <div class="offerBar ">
+        <p class="text-base sm:text-base md:text-lg ">Sign Up and <strong>GET 20% OFF</strong> for your first order</p>
+        <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+    </div>
+
+    <!--Navigation Bar-->
+
+    <!-- <nav class="navBar ">
+      
+        <h1>Nostra</h1>
+
+        <svg 
+        id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+             class="w-6 h-6 md:hidden cursor-pointer">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+         </svg>
+        <div class="navbars sm:flex hidden md:flex justify-between align-baseline gap-5">
+            <p class="navbars"><a href="#">Home</a></p>
+            <p class="navbars"><a href="#">New Arrival</a></p>
+            <p class="navbars"><a href="#">Most Wanted</a></p>
+            <p class="navbars"><a href="#">Collection</a></p>
+            <p class="navbars"><a href="#">Contact Us</a></p>
+        </div>
+
+
+    </nav> -->
+
+
+    <!-- Responsive Navbar -->
+    <nav class="bg-white  flex items-center justify-between  sticky top-0 z-10 p-5">
+        <a href="index.html" class="text-2xl cursor-pointer">
+            <h1>Nostra</h1>
+        </a>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+            stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+
+
+        <ul class="flex gap-5 text-black hidden md:flex ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">New Arrival</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Most Wanted</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Collections</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- side navbar -->
+
+    <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000 "
+        style="width: 50%; height: 100vh; left: -50%; ">
+
+        <div class="text-right p-5">
+            <p id="closenav" class="inline text-white cursor-pointer">X</p>
+        </div>
+
+        <ul class="flex flex-col items-center gap-5 text-white">
+            <li>
+                <a class="hover:underline hover:text-white" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-white" href="product.html">New Arraival</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-white" href="contact.html">Most Wanted</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-white" href="contact.html">Collection</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-white" href="contact.html">Contact Us</a>
+            </li>
+
+
+
+        </ul>
+    </section>
+
+
+    <!-- Slider Content -->
+
+    <div class="container ">
+
+        <!--Slider-->
+        <div class="slider ">
+            <div class="slider-left-button ml-20">
+                <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="slider-content lg:text-center mt-10 ml-10">
+                <h1 style="font-size: 20px; font-weight: bold; ">Level up your style with our</h1>
+                <h4 style="font-size: 20px; font-weight: bold;">Summer Collections</h4>
+                <button class="btne"> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+
+            <div class="slider-image-container >
+            <img class=" slider-image " src=" ./images/slider-one.jpg" alt="">
+                <img class="slider-image" src="./images/slider-one.jpg" alt="">
+                <img class="slider-image" src="./images/slider-one.jpg" alt="">
+            </div>
+
+            <div class="slider-right-button ml-15">
+
+                <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+            </div>
+        </div>
+
+        <!-- Brand Section -->
+
+        <h2 style="margin-top: 20px; font-size: 20px; font-weight: bold;">Brands</h2>
+
+
+        <div class="brands">
+
+            <div class="brandsItems">
+                <img class="brandsIcon" src="./images/Icons/img1.png" alt="">
+                <p>Puma</p>
+            </div>
+
+            <div class="brandsItems">
+                <img class="brandsIcon" src="./images/Icons/img2.png" alt="">
+                <p>Adidas</p>
+            </div>
+
+            <div class="brandsItems">
+                <img class="brandsIcon" src="./images/Icons/img3.png" alt="">
+                <p>Simple</p>
+            </div>
+
+            <div class="brandsItems">
+                <img class="brandsIcon" src="./images/Icons/img4.png" alt="">
+                <p>Leaves</p>
+            </div>
+
+            <div class="brandsItems">
+                <img class="brandsIcon" src="./images/Icons/img1.png" alt="">
+                <p>Behance</p>
+            </div>
+
+            <div class="brandsItems">
+                <img class="brandsIcon" src="./images/Icons/img6.png" alt="">
+                <p>Twitch</p>
+            </div>
+
+            <div class="brandsItems mr-5">
+                <img class="brandsIcon" src="./images/Icons/img4.png" alt="">
+                <p>Leaves</p>
+            </div>
+
+
+
+
+        </div>
+
+        <!-- Servives -->
+
+        <div class="servive ">
+                <h4 style="margin-top:20px; font-size: 20px; font-weight: bold;">New Arrival Everyday</h4>
+            <div class="servivesContainer1">
+                <div>
+                    <h2 class="text-2xl">We Provide Best</h2>
+                    <h2 class="text-2xl">Customer Experience</h2>
+                </div>
+                <div >
+                    <p class="text-2xl lg:mr-5 ">|| We ensure that our customer have the best shopping experience</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="servivesContainer2">
+            <div>
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-circle-check  "></i>
+                <h4 class="text-lg font-semibold">Original Products</h4>
+                <p class="text-sm">"Experience the authenticity of our original products for a genuine shopping experience."
+                </p>
+            </div>
+
+            <div>
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-regular fa-face-smile "></i>
+                <h4 class="text-lg font-semibold">Satisfaction Guarantee</h4>
+                <p class="text-sm">"We stand by our satisfaction guarantee, ensuring you love every purchase or get a full refund."
+                </p>
+            </div>
+            <div>
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-broom "></i>
+                <h4 class="text-lg font-semibold">New Arrival Everyday</h4>
+                <p class="text-sm">"Discover our exciting new arrivals every day and stay ahead of the trends."
+
+                </p>
+            </div>
+
+            <div>
+                <i style="font-size: 3vw;margin-bottom: 10px;" class="fa-solid fa-truck-fast"></i>
+                <h4 class="text-lg font-semibold">Fast & Free Shipping</h4>
+                <p class="text-sm">"Enjoy fast & free shipping on all orders, delivering your items quickly without extra cost."
+
+                </p>
+            </div>
+
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
