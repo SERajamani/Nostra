@@ -370,3 +370,60 @@ padding: 10px;
     
 
  }
+
+ /* Collection html */
+
+ 
+.divideSection{
+    display: flex;
+}
+
+.filterSection{
+    flex-basis: 25%;
+    position: relative;
+    font-size: 2vw;
+}
+
+.productSection{
+    flex-basis: 75%;
+    position: relative;
+}
+
+.navbarSearch {
+    border: solid #1D232C 1px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.vertical-line {
+    border: none;
+    border-left: 3px solid #1D232C; /* Adjust color and width as needed */
+    height: 100%; /* Adjust height as needed */
+    margin: 0 20px; /* Adjust margin as needed */
+    position: absolute;
+    top: 0px;
+    right: 0px
+    
+  }
+
+.filterSectionPrice,.filterSectionArrivals,.filterSectionOccasion,.filterSectionColors{
+    margin-top: 3vw;
+    margin-bottom: 10px;
+    
+}
+
+.productSection{
+    padding: 10px;
+}
+
+.products{
+    margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size:1vw;
+}

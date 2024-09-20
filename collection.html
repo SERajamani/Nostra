@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Tailwind CDN Link -->
+    <link href="
+        https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+        " rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Offer Bar -->
+    <div class="offerBar ">
+        <p class="text-base sm:text-base md:text-lg ">Sign Up and <strong>GET 20% OFF</strong> for your first order</p>
+        <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+    </div>
+
+    <!-- Responsive Navbar -->
+    <nav class="bg-white  flex items-center justify-between  sticky top-0 z-10 p-5">
+        <a href="index.html" class="text-2xl cursor-pointer">
+            <h1>Nostra</h1>
+        </a>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+            stroke="currentColor" class="w-6 h-6 md:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+
+
+        <ul class="flex gap-5 text-black hidden md:flex ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="#new-arrival">New Arrival</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="#mostWanted">Most Wanted</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Collections</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- side navbar -->
+
+    <section id="sidenav" class="bg-black fixed z-20 top-0 transition-all duration-1000 "
+        style="width: 50%; height: 100vh; left: -50%; ">
+
+        <div class="text-right p-5">
+            <p id="closenav" class="inline text-white cursor-pointer">X</p>
+        </div>
+
+        <ul class="flex flex-col items-center gap-5 text-white">
+            <li>
+                <a class="hover:underline hover:text-white" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-white" href="#newArrival">New Arrival</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-white" href="#mostWanted">Most Wanted</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-white" href="#">Collection</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-white" href="#">Contact Us</a>
+            </li>
+
+
+
+        </ul>
+    </section>
+
+    <!--  -->
+
+    <div class="container">
+
+        <div class="divideSection">
+            <div class="filterSection">
+
+                <h3 class="filterSectionOccasion">Occasion</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="summer"> Summer <br>
+                    <input type="checkbox" name="tags" value="party"> Party <br>
+                    <input type="checkbox" name="tags" value="beach"> Beach
+
+                </div>
+
+                <h3 class="filterSectionColors"> Colors </h3>
+                <div>
+                    <input type="checkbox" name="tags" value="red"> Red <br>
+                    <input type="checkbox" name="tags" value="blue"> Blue <br>
+                    <input type="checkbox" name="tags" value="white"> White <br>
+                    <input type="checkbox" name="tags" value="green"> Green
+                </div>
+
+                <h3 class="filtersectionArrivals"> Arrivals </h3>
+                <div>
+                    <input type="checkbox" name="tags" value="new"> New <br>
+                    <input type="checkbox" name="tags" value="old"> Old
+
+                </div>
+
+
+                <hr class="vertical-line">
+            </div>
+
+            <div class="productSection">
+                <form class="navbarSearch">
+                    <input type="search" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+
+                <div class="products">
+                    <div class="product">
+                        <img src="./images/products/p1.png" style="width:20vw" alt="">
+                        <h1>Party Floral Shirt</h1>
+                        <p>Rs.399</p>
+                        <tags style="visibility:hidden;">old,red,party</tags>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/products/p2.png" style="width:20vw" alt="">
+                        <h1>Summer Green</h1>
+                        <p>Rs.260</p>
+                        <tags style="visibility:hidden;">new,green,beach</tags>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/products/p3.png" style="width:20vw" alt="">
+                        <h1>Party Floral Shirt</h1>
+                        <p>Rs.399</p>
+                        <tags style="visibility:hidden;">old,red,party</tags>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/products/p4.png" style="width:20vw" alt="">
+                        <h1>Floral Summer Shirt</h1>
+                        <p>Rs.399</p>
+                        <tags style="visibility:hidden;">old,white,beach</tags>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/products/p5.png" style="width:20vw" alt="">
+                        <h1>Beach Shirt</h1>
+                        <p>Rs.579</p>
+                        <tags style="visibility:hidden;">old,white,beach</tags>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/products/p6.png" style="width:20vw" alt="">
+                        <h1>Shirt Party Red</h1>
+                        <p>Rs.579</p>
+                        <tags style="visibility:hidden;">old,red,party</tags>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/products/p7.png" style="width:20vw" alt="">
+                        <h1>Party Floral Shirt</h1>
+                        <p>Rs.399</p>
+                        <tags style="visibility:hidden;">old,red,party</tags>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/products/p8.png" style="width:20vw" alt="">
+                        <h1>Shirt Party Red</h1>
+                        <p>Rs.579</p>
+                        <tags style="visibility:hidden;">old,red,party</tags>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/products/p9.png" style="width:20vw" alt="">
+                        <h1>Summer Shirt</h1>
+                        <p>Rs.200</p>
+                        <tags style="visibility:hidden;">new,blue,summer</tags>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <!-- News Letter -->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="border border-black p-2 m-3" style="width:80%"> <br>
+        <button class="bg-black text-white p-3 m-1 ">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-black text-white p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Nostra</h1>
+        <p>Discover premium quality shirts at Nostra, crafted for comfort, style, and durability.
+        </p>
+
+        <div class="footer-icon-container">
+            <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+        </div>
+
+        <p class="subtitle">@ 2023 Nostra.com</p>
+    </section>
+
+
+    <script src="collection.js"></script>
+</body>
+
+</html>
