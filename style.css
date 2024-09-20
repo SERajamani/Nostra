@@ -8,8 +8,10 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    
+    scroll-behavior: smooth;
 }
+
+
 
 /* OfferBar */
 
@@ -204,13 +206,167 @@ body {
 }
 
 .servivesContainer2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ensures 4 equal columns */
+    display: flex;
+    background-color: #F2F4F7;
+    padding: 10px;
+   justify-content: space-between;
     gap: 10px;
-    width: 100vw; /* Full viewport width */
+   font-size: 1vw; /* Full viewport width */
     box-sizing: border-box;
 }
 
+.servivesContainer2 div {
+border-radius: 5px;
+background-color: #F2F4F7;
+padding: 10px;
+}
+
+/* New Arrival */
 
 
+.newArrival{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+   
+    
+}
 
+.newArrivalContainer{
+   position: relative;
+   
+    
+}
+
+.newArrivalContainer img{
+    border-radius: 2%;
+    
+     
+ }
+ 
+
+.overlay{
+    border-radius: 2%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    top: 0;
+    opacity: 0.6;
+ }
+ 
+
+
+.newArrivalContainer button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #1D232C;
+    background-color: #F2F4F7;
+    border-radius: 10px;
+    position: absolute;
+    border: none;
+    top: 50%;
+    left: 18%;
+    z-index: 2;
+    
+
+ }
+
+ .mostWanted {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2vw;
+    overflow-x: auto; 
+    gap: 20px;
+    scroll-snap-type: x mandatory; 
+    padding-bottom: 10px;
+}
+
+/* For WebKit-based browsers (Chrome, Safari) */
+.mostWanted::-webkit-scrollbar {
+    height: 8px; /* Custom height */
+}
+
+.mostWanted::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide thumb by default */
+    border-radius: 10px; /* Rounded scrollbar */
+}
+
+.mostWanted:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Darken thumb on hover */
+}
+
+.mostWanted::-webkit-scrollbar-track {
+    background-color: transparent; /* Hide track */
+}
+
+.mostWantedContainer {
+    position: relative;
+    flex: 0 0 auto; 
+}
+
+.mostWanted img {
+    border-radius: 2%;
+}
+
+.sale-overlay {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+}
+
+.like-button {
+    position: absolute;
+    width: 15%;
+    bottom: 12%;
+    right: 5%;
+}
+
+/* Limited Offer */
+
+.limitedOffer{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    padding: 20px;
+    font-size: 2vw;
+}
+
+.limitedOffer img{
+    width: 100%;
+    height: 100%100%;
+}
+
+.limitedOfferText{
+    padding: 5%;
+}
+
+.limitedOffer button{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin-top: 10px;
+    font-size: 1.2vw;
+    color: #040b17;
+    background-color: #F2F4F7;
+    border-radius: 10px;
+ 
+    border: none;
+    
+
+ }

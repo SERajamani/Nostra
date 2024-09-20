@@ -63,6 +63,25 @@ function(){
 )
 
 
+// Like Button for red heart
+
+var likebuttons=document.querySelectorAll(".like-button")
+
+likebuttons.forEach((btn)=>{
+    btn.addEventListener("click",function(e){
+        
+        
+        if(e.target.src.indexOf("blackheart")>0)
+        {
+        
+            e.target.src="./images/icons/redheart.png"
+        }
+        else{
+            e.target.src="./images/icons/blackheart.png"
+        }
+    })
+})
+
 
 
 
