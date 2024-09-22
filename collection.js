@@ -18,64 +18,72 @@ menuicon.addEventListener("click",function(){
 closenav.addEventListener("click",function(){
     sidenav.style.left="-50%"
 })
-document.addEventListener("DOMContentLoaded", function() {
-    // Get all checkboxes
+
+// Search bar
+
+   var searchInput = document.querySelector('input[type="search"]');
+
+  
+   var products = document.querySelectorAll('.product');
+
+   
+   searchInput.addEventListener('input', function(event) {
+       
+       var searchValue = event.target.value.toUpperCase();
+
+      
+       products.forEach(function(product) {
+           
+           var productName = product.querySelector('h1').textContent.toUpperCase();
+           if (productName.includes(searchValue)) {
+               product.style.display = 'block'; 
+           } else {
+               product.style.display = 'none'; 
+           }
+       });
+   });
+
+   document.addEventListener("DOMContentLoaded", function() {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    
-    // Add event listeners to all checkboxes
+
     for (let i = 0; i < checkboxes.length; i++) {
         checkboxes[i].addEventListener('change', filterProducts);
     }
 
     function filterProducts() {
-        // Get all checked checkboxes
         let selectedTags = [];
-        
+
         for (let i = 0; i < checkboxes.length; i++) {
             if (checkboxes[i].checked) {
                 selectedTags.push(checkboxes[i].value);
             }
         }
 
-        // Get all products
         const products = document.querySelectorAll('.product');
 
-        // If no checkboxes are selected, display all products
         if (selectedTags.length === 0) {
             for (let i = 0; i < products.length; i++) {
-                products[i].style.display = 'block'; // Show all products
+                products[i].style.display = 'block'; 
             }
         } else {
-            // Loop through each product
             for (let i = 0; i < products.length; i++) {
-                // Get the tags associated with the current product and trim whitespace
-                let productTagsText = products[i].querySelector('tags').innerText.trim();
-                let productTags = productTagsText.split(',');
-
-                // Trim each product tag using a for loop (avoiding map)
-                for (let j = 0; j < productTags.length; j++) {
-                    productTags[j] = productTags[j].trim();
-                }
+                // Get the product tags from data-tags attribute
+                let productTagsText = products[i].getAttribute('data-tags');
+                let productTags = productTagsText.split(',').map(tag => tag.trim());
 
                 // Check if any of the selected tags match the product's tags
-                let match = false;
-                for (let k = 0; k < selectedTags.length; k++) {
-                    if (productTags.includes(selectedTags[k])) {
-                        match = true;
-                        break; // Stop loop if a match is found
-                    }
-                }
+                let match = selectedTags.some(tag => productTags.includes(tag));
 
-                // Show product if it matches any selected tag, otherwise hide it
                 if (match) {
-                    products[i].style.display = 'block'; // Show product
+                    products[i].style.display = 'block'; 
                 } else {
-                    products[i].style.display = 'none'; // Hide product
+                    products[i].style.display = 'none'; 
                 }
             }
         }
     }
 });
+
 
 
 
